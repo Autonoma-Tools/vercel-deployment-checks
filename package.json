@@ -1,0 +1,24 @@
+{
+  "name": "vercel-deployment-checks",
+  "version": "0.1.0",
+  "description": "Companion code for the Autonoma blog post on Vercel Deployment Checks.",
+  "license": "MIT",
+  "private": true,
+  "scripts": {
+    "start": "ts-node src/checks-handler.ts",
+    "simulate": "bash examples/simulate-webhook.sh"
+  },
+  "dependencies": {
+    "@vercel/sdk": "^1.0.0",
+    "express": "^4.19.2"
+  },
+  "devDependencies": {
+    "@types/express": "^4.17.21",
+    "@types/node": "^20.11.0",
+    "ts-node": "^10.9.2",
+    "typescript": "^5.4.5"
+  },
+  "engines": {
+    "node": ">=20"
+  }
+}
